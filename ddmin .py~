@@ -11,16 +11,12 @@ MAX_DEGREE = 5
 def ddmin(data, test,n=1):
 	"""Return a sublist of CIRCUMSTANCES that is a relevant configuration
        	   with respect to TEST."""
-
-	#for i in range(1,MAX_DEGREE):
 	subsets=split(data,n)
-		
-     
 	for subset in subsets:	
 		if test(subset)==FAIL:
 			return ddmin(subset,test,2)
-		else:
-			continue
+	
+	return tempfile()	
 
            
 	
@@ -97,7 +93,7 @@ if __name__ == "__main__":
                 	return PASS
 													
 	
-	ddmin(data,test)
+	failed=ddmin(data,test)
 	
 	
 

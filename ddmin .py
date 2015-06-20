@@ -15,8 +15,8 @@ def ddmin(data, test,n=1):
 	for subset in subsets:	
 		if test(subset)==FAIL:
 			return ddmin(subset,test,2)
-		else:
-			continue
+	
+	return tempfile()	
 
            
 	
@@ -93,7 +93,7 @@ if __name__ == "__main__":
                 	return PASS
 													
 	
-	ddmin(data,test)
+	failed=ddmin(data,test)
 	
 	
 
